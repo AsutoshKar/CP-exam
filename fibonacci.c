@@ -1,27 +1,26 @@
 // Let's find a Fibonacci series in C
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n;
     int t1 = 0, t2 = 1, nextTerm;
 
     printf("Enter the number: ");
-    if (scanf("%d", &n) != 1) return 1;
+    scanf("%d", &n);
 
     if (n == 0) {
-        printf("Enter a positive integer.\n");
+        printf("0");
         return 0;
     }
 
     else if (n == 1) {
-        printf("Fibonacci Series: %d\n", t1);
+        printf("0 1");
         return 0;
     }
     else{
         nextTerm = t1 + t2;
-        printf("Fibonacci Series: %d, %d", t1, t2);
+        printf("0 1");
         do {
-            
             printf(", %d", nextTerm);
             t1 = t2;
             t2 = nextTerm;
