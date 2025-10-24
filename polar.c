@@ -8,7 +8,7 @@ int main() {
     if (scanf("%f %f", &x, &y) != 2) return 1;
 
     r = sqrt(x * x + y * y);
-    theta = atan2(y, x) * (180.0 / 3.14); // Convert to degrees
+    theta = atanf(y / x) * (180.0 / 3.14); // Convert to degrees
 
     printf("Polar coordinates: r = %.2f, theta = %.2f degrees\n", r, theta);
     return 0;
