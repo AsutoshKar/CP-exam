@@ -7,6 +7,7 @@ int main() {
     for (i = 1; i < num; i++) {
         if (num % i == 0) {
             sum= sum+ i;
+            printf("Divisor: %d\n", i);
         }
     }
     if (sum == num) {

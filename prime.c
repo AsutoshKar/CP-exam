@@ -6,12 +6,12 @@ int main() {
     scanf("%d", &num);
 
 
-    for (i = 2; i < num; i++) {
+    for (i = 2; i <= num; i++) {
         if (num % i == 0) {
                 break;   // Found a divisor, not prime
         
         }
-    }
+    }3
 
     if (i==num) {
         printf("%d is a prime number.\n", num);
