@@ -4,6 +4,10 @@ int main() {
     int num, binary = 0, remainder, base = 1;
     printf("Enter a decimal number: ");
     scanf("%d", &num);
+    if (num == 0) {
+        printf("Binary representation: 0\n");
+        return 0;
+    }
     while (num > 0) {
         remainder = num % 2;
         binary = binary + remainder * base;

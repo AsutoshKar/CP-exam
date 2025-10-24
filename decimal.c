@@ -6,6 +6,10 @@ int main() {
 
     printf("Enter a binary number: ");
     scanf("%d", &binary);
+    if (binary == 0) {
+        printf("Decimal equivalent: 0\n");
+        return 0;
+    }
 
     while (binary > 0) {
         rem = binary % 10;

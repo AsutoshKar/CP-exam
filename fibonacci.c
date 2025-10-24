@@ -12,6 +12,10 @@ int main() {
         t1 = t2;
         t2 = nextTerm;
         nextTerm = t1 + t2;
+        if (nextTerm>=n)
+        {
+            break;
+        }
     }
     printf("\n");
     return 0;
