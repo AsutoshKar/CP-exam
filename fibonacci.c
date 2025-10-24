@@ -8,7 +8,7 @@ int main(void) {
     printf("Enter the number: ");
     if (scanf("%d", &n) != 1) return 1;
 
-    if (n <= 0) {
+    if (n == 0) {
         printf("Enter a positive integer.\n");
         return 0;
     }
@@ -18,12 +18,14 @@ int main(void) {
         return 0;
     }
     else{
+        nextTerm = t1 + t2;
         printf("Fibonacci Series: %d, %d", t1, t2);
         do {
-            nextTerm = t1 + t2;
+            
             printf(", %d", nextTerm);
             t1 = t2;
             t2 = nextTerm;
+            nextTerm = t1 + t2;
             if (nextTerm > n) 
                 break;
         } while (1);
