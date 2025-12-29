@@ -3,7 +3,7 @@
 #include <string.h>
 int main() {
     char str[100];
-    int i, words = 0, sentences = 0, spaces = 0;
+    int i, sentences = 0, spaces = 0;
 
     printf("Enter a string: ");
     scanf("%[^\n]", str);
